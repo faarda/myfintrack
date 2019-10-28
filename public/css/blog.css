@@ -1,0 +1,39 @@
+​ .btn-transparent {
+    background: #fff;
+    color: #000;
+    border: 2px solid brown;
+}
+
+.btn-transparent>a {
+    border: 2px solid brown;
+}
+
+.page {
+    padding-top: 100px;
+    /* background: radial-gradient(936.01px at 40.97% 91.02%, rgba(255, 255, 255, 0.74) 0%, #FCFEFF 41.15%, rgba(251, 254, 255, 0.74) 50.86%, rgba(220, 247, 255, 0.74) 73.51%, rgba(222, 238, 243, 0.74) 100%);
+    height: 410px; */
+}
+
+#blog {
+    padding-top: 100px;
+}
+
+.more a {
+    margin: 20px;
+    /* font-weight: 400; */
+}
+
+.img-responsive-blog img {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+#blog h4{
+    text-align: left;
+    color: black;
+}
+
+.blog main{
+    padding: 50px;
+}

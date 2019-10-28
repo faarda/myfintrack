@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+* {
+    outline: none;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+html, body, ::after, ::before {
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --font-family: 'Roboto', sans-serif;
+}
+
+.heading {
+    text-align: center;
+}
+
+.container {
+    padding: 10px 80px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.text-content {
+    font-size: .95em;
+    font-family: var(--font-family);
+    word-wrap: break-word;
+    word-break: keep-all;
+    writing-mode: horizontal-tb;
+    text-align: left;
+    text-overflow: ellipsis;
+    line-height: 30px;
+}
+
+.accordion--btn {
+    position: relative;
+    background-color: #eee;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  .accordion--btn > i {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all .5s;
+  }
+
+  [data-question] {
+      font: 1.3em var(--font-family);
+      color: #444;
+  }
+
+  .accordion--btn.active > i {
+      transform: translateY(-50%) rotate(180deg);
+  }
+  
+  .active:not(.nav-item) , .accordion--btn:hover {
+    background-color: #ccc; 
+  }
+
+  .active:not(.nav-item) {
+      box-shadow: 2px 3px 5px #e0e0e0;
+  }
+  
+  .accordion--content {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  @media (max-width: 992.98px) {
+    .container {
+        padding: 10px 40px;
+        width: 97%;
+    }
+  }
+
+  .faq--section{
+    min-height: 80vh;
+  }
